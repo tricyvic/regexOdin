@@ -1,7 +1,11 @@
 const inputs =document.querySelectorAll("input")
 
 const patterns = {
-    telephone: /^\d{10}$/
+    telephone: /^\d{10}$/,
+    username: /^\d{5,8}$/i,
+    password: /^[\w@-]{8,20}$/,
+    slug: /^[a-z\d-]{8,20}$/
+
 }
 function validate(field,regex){
    if(regex.test(field.value)){
