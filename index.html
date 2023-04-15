@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex-validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="#">
+        <h1>New User Signup</h1>
+        <input name="username" type="text"placeholder="username" >
+        <p for="text">User name must contain 5- 12 characters</p>
+        <input name="email" type="email" placeholder="email">
+        <p for="email">email must be a valid address, e,g me@mydomain.com</p>
+        <input name="password" type="password" placeholder="password">
+        <p for="password">Password must alphanumeric(@,_and - are also allowed ) and be 8 - 20 characters</p>
+        <input name="telephone" type="number" placeholder="telephone">
+        <p for="number">Telephone must be a valid kenyan telephone number (10 digits)</p>
+        <input name="profile-slug" type="text" placeholder="profile slug">
+        <p for="text">Slug must contain only lowercase letters, numbers and hyphensand be 8-20 characters</p>
+    </form>
+
+    <script src="./validation.js"></script>
+</body>
+</html>
